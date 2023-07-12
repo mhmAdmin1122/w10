@@ -5,10 +5,10 @@ import Image from 'next/image'
 const HowTo = () => {
     return (
         <div className='how-to flex flex-start'>
-            <div className='text_orr h-auto bg-gray-500 text-white px-4 py-2 my-1 ml-2 animate-pulse'>
+            <div className='text_orr h-auto bg-gray-500 text-white px-4 py-2 my-1 ml-2'>
                 <b>H O W   T O</b>
             </div>
-            <div className='pr-8 pl-3 py-2'>
+            <div className='pr-8 pl-3 py-2 how-to-box'>
 
                 <h1 className='font-extrabold text-2xl mb-2'>How To!</h1>
                 <p>How to W10 in Your Education Journey: Unveiling the Path to Success!</p>

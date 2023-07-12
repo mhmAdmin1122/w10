@@ -1,21 +1,197 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.header button b{
-    @apply text-2xl;
+.header button b {
+  @apply text-2xl;
 }
 
-.text_orr{
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+.text_orr {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
-.contact-form label, .feedForm label, .ProblemsForm label{
-    @apply my-2 text-lg font-bold;
+.contact-form label,
+.feedForm label,
+.ProblemsForm label {
+  @apply my-2 text-lg font-bold;
 }
-.contact-form input, .contact-form textarea, .feedForm textarea, .ProblemsForm textarea{
-    @apply my-2 border border-gray-200 shadow-md shadow-gray-300 px-4 py-2 rounded-md outline-none w-72;
+.contact-form input,
+.contact-form textarea,
+.feedForm textarea,
+.ProblemsForm textarea {
+  @apply my-2 border border-gray-200 shadow-md shadow-gray-300 px-4 py-2 rounded-md outline-none w-72;
 }
-.contact-form textarea, .feedForm textarea, .ProblemsForm textarea{
-    @apply h-40;
+.contact-form textarea,
+.feedForm textarea,
+.ProblemsForm textarea {
+  @apply h-40;
+}
+.category-mobile-Tabs,
+.mobile-search-box {
+  display: none;
+}
+body {
+  position: relative;
+}
+/* web-view 1039 to 850 */
+@media (max-width: 1039px) and (min-width: 850px) {
+  .text_orr {
+    writing-mode: horizontal-tb;
+    text-orientation: unset;
+    text-align: center;
+    margin: 6px 0px;
+  }
+  .how-to-box {
+    margin-bottom: 95px;
+  }
+  .how-to,
+  .about-us {
+    display: grid !important;
+  }
+  .category-mobile-Tabs,
+  .mobile-search-box {
+    display: none;
+  }
+}
+/* web-view 849 to 650 */
+@media (max-width: 849px) and (min-width: 650px) {
+  .text_orr {
+    writing-mode: horizontal-tb;
+    text-orientation: unset;
+    text-align: center;
+    margin: 6px 0px;
+  }
+  .how-to-box {
+    margin-bottom: 95px;
+  }
+  .how-to,
+  .about-us {
+    display: grid !important;
+  }
+  .categoryTabs,
+  .mobile-search-box {
+    display: none;
+  }
+  .category-mobile-Tabs {
+    display: flex;
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    box-shadow: -1px -13px 31px #cbc8c8;
+    padding: 4px;
+  }
+  .mobile_tabs_Category {
+    display: flex;
+    justify-content: space-between !important;
+    width: 100%;
+  }
+}
+/* web-view 649 to 451 */
+@media (max-width: 649px) and (min-width: 451px) {
+  .text_orr {
+    writing-mode: horizontal-tb;
+    text-orientation: unset;
+    text-align: center;
+    margin: 6px 0px;
+  }
+  .how-to-box {
+    margin-bottom: 95px;
+  }
+  .how-to,
+  .about-us {
+    display: grid !important;
+  }
+  .categoryTabs,
+  .mobile-search-box {
+    display: none;
+  }
+  .category-mobile-Tabs {
+    display: flex;
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    box-shadow: -1px -13px 31px #cbc8c8;
+    padding: 4px;
+  }
+  .mobile_tabs_Category {
+    display: flex;
+    justify-content: space-between !important;
+    width: 100%;
+  }
+}
+/* web-view 450 to 360 */
+@media (max-width: 450px) and (min-width: 360px) {
+  .text_orr {
+    writing-mode: horizontal-tb;
+    text-orientation: unset;
+    text-align: center;
+    margin: 6px 0px;
+  }
+  .how-to-box {
+    margin-bottom: 95px;
+  }
+  .how-to,
+  .about-us {
+    display: grid !important;
+  }
+  .categoryTabs,
+  .search-box {
+    display: none;
+  }
+  .category-mobile-Tabs {
+    display: flex;
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    box-shadow: -1px -13px 31px #cbc8c8;
+    padding: 4px;
+  }
+  .mobile_tabs_Category {
+    display: flex;
+    justify-content: space-between !important;
+    width: 100%;
+  }
+  .mobile-search-box {
+    display: block;
+  }
+}
+/* web-view 360 to 100 */
+@media (max-width: 360px) and (min-width: 100px) {
+  .text_orr {
+    writing-mode: horizontal-tb;
+    text-orientation: unset;
+    text-align: center;
+    margin: 6px 0px;
+  }
+  .how-to-box {
+    margin-bottom: 95px;
+  }
+  .how-to,
+  .about-us {
+    display: grid !important;
+  }
+  .categoryTabs,
+  .search-box {
+    display: none;
+  }
+  .category-mobile-Tabs {
+    display: flex;
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    box-shadow: -1px -13px 31px #cbc8c8;
+    padding: 4px !important;
+  }
+  .mobile_tabs_Category {
+    display: flex;
+    justify-content: space-between !important;
+    width: 100%;
+  }
+  .mobile-search-box {
+    display: block;
+  }
 }

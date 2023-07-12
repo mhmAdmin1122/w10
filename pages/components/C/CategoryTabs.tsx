@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const CategoryTabs = () => {
   return (
-    <div className='bg-gray-500 w-full h-8 shadow-md shadow-gray-300 text-gray-800 flex justify-center items-center font-medium px-5 header'>
+    <div className='categoryTabs bg-gray-500 w-full h-8 shadow-md shadow-gray-300 text-gray-800 flex justify-center items-center font-medium px-5 header'>
       <ul className="CategoryList flex text-white">
 
         <li className="tabs_Category cursor-pointer hover:bg-white hover:text-gray-800 hover:border-b-red-400 border-2 border-white px-2 border-l-0 border-t-0 border-b-0 flex items-center gap-2">

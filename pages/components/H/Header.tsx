@@ -3,6 +3,7 @@ import React from 'react'
 import { MdOutlineSearch, MdMenu } from 'react-icons/md'
 import logo from '@/../public/img/logo1.png'
 import Link from 'next/link'
+import MobileSearchIcon from '../M/MobileSearchIcon'
 
 const Header = () => {
   return (
@@ -25,6 +26,7 @@ const Header = () => {
           <button type="submit"><b><MdOutlineSearch className='bg-white h-8 rounded-r-lg'/></b></button>
         </form>
       </div>
+      <MobileSearchIcon />
     </nav>
   )
 }
