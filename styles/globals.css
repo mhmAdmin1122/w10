@@ -123,6 +123,10 @@ body {
 }
 /* web-view 450 to 360 */
 @media (max-width: 450px) and (min-width: 360px) {
+  .map-view-frame {
+    width: 230px !important;
+    height: 160px !important;
+  }
   .text_orr {
     writing-mode: horizontal-tb;
     text-orientation: unset;
@@ -160,6 +164,10 @@ body {
 }
 /* web-view 360 to 100 */
 @media (max-width: 360px) and (min-width: 100px) {
+  .map-view-frame {
+    width: 230px !important;
+    height: 160px !important;
+  }
   .text_orr {
     writing-mode: horizontal-tb;
     text-orientation: unset;
