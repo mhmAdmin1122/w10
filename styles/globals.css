@@ -10,12 +10,12 @@
     text-orientation: upright;
 }
 
-.contact-form label{
+.contact-form label, .feedForm label, .ProblemsForm label{
     @apply my-2 text-lg font-bold;
 }
-.contact-form input, .contact-form textarea{
+.contact-form input, .contact-form textarea, .feedForm textarea, .ProblemsForm textarea{
     @apply my-2 border border-gray-200 shadow-md shadow-gray-300 px-4 py-2 rounded-md outline-none w-72;
 }
-.contact-form textarea{
+.contact-form textarea, .feedForm textarea, .ProblemsForm textarea{
     @apply h-40;
 }
