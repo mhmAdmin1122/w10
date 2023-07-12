@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { MdOutlineSearch, MdMenu } from 'react-icons/md'
 import logo from '@/../public/img/logo1.png'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -16,7 +17,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="pageTitleBox cursor-context-menu flex justify-center" title='Home || W10'>
-        <Image src={logo} alt='logo' style={{width: "100px", height: '100px'}}/>
+        <Link href={"/"}><Image src={logo} alt='logo' style={{width: "100px", height: '100px'}}/></Link>
       </div>
       <div className="search-box">
         <form className='flex items-center' title='Search'>

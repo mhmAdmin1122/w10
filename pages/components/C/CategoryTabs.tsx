@@ -2,6 +2,7 @@ import React from 'react'
 import { MdOutlineCastForEducation, MdShoppingBag, MdShop2 } from 'react-icons/md'
 import { PiCertificate } from 'react-icons/pi'
 import { FaPhotoVideo, FaHandsHelping } from 'react-icons/fa'
+import Link from 'next/link'
 
 const CategoryTabs = () => {
   return (
@@ -33,11 +34,12 @@ const CategoryTabs = () => {
           <b>Tutorial and Excercises</b>
         </li>
 
-        <li className="tabs_Category cursor-pointer relative hover:bg-white hover:text-gray-800 hover:border-b-red-400 px-2 flex items-center gap-2">
-          <b><FaHandsHelping /></b>
-          <b>Help</b>
-          
-        </li>
+        <Link href={"/help"}>
+          <li className="tabs_Category cursor-pointer relative hover:bg-white hover:text-gray-800 hover:border-b-red-400 px-2 flex items-center gap-2">
+            <b><FaHandsHelping /></b>
+            <b>Help</b>
+          </li>
+        </Link>
 
       </ul>
     </div>

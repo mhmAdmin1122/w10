@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>W10</title>
+        <title>W10 || Home</title>
       </Head>
       <Header />
       <CategoryTabs />
