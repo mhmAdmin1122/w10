@@ -163,7 +163,9 @@ body {
   }
 }
 /* web-view 360 to 100 */
+
 @media (max-width: 360px) and (min-width: 100px) {
+
   .map-view-frame {
     width: 230px !important;
     height: 160px !important;
@@ -174,9 +176,10 @@ body {
     text-align: center;
     margin: 6px 0px;
   }
-  .how-to-box {
+  .how-to-box{
     margin-bottom: 95px;
   }
+  
   .how-to,
   .about-us {
     display: grid !important;

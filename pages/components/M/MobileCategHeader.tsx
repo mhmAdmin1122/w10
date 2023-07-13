@@ -30,10 +30,12 @@ const MobileCategHeader = () => {
                         {/* <b className="category-Tabs-Title">Entertainment</b> */}
                     </li>
 
-                    <li className="mobile_tabs_Category cursor-pointer px-2 grid justify-items-center items-center gap-2">
-                        <b className="icon-category-tabs" title='Tutorial and Excercises'><MdShop2 className="text-4xl w-10 h-10 hover:text-gray-800 hover:bg-white rounded-full p-2" /></b>
-                        {/* <b className="category-Tabs-Title">Tutorial and Excercises</b> */}
-                    </li>
+                    <Link href={"/tutor-excercise"}>
+                        <li className="mobile_tabs_Category cursor-pointer px-2 grid justify-items-center items-center gap-2">
+                            <b className="icon-category-tabs" title='Tutorial and Excercises'><MdShop2 className="text-4xl w-10 h-10 hover:text-gray-800 hover:bg-white rounded-full p-2" /></b>
+                            {/* <b className="category-Tabs-Title">Tutorial and Excercises</b> */}
+                        </li>
+                    </Link>
 
                     <Link href={"/help"}>
                         <li className="mobile_tabs_Category cursor-pointer relative px-2 grid justify-items-center items-center gap-2">
