@@ -24,10 +24,12 @@ const CategoryTabs = () => {
           <b>Certifiction</b>
         </li>
 
-        <li className="tabs_Category cursor-pointer hover:bg-white hover:text-gray-800 hover:border-b-red-400 border-2 border-white px-2 border-l-0 border-t-0 border-b-0 flex items-center gap-2">
-          <b><FaPhotoVideo /></b>
-          <b>Entertainment</b>
-        </li>
+        <Link href={"/enterTainment"}>
+          <li className="tabs_Category cursor-pointer hover:bg-white hover:text-gray-800 hover:border-b-red-400 border-2 border-white px-2 border-l-0 border-t-0 border-b-0 flex items-center gap-2">
+            <b><FaPhotoVideo /></b>
+            <b>Entertainment</b>
+          </li>
+        </Link>
 
         <Link href={"/tutor-excercise"}>
           <li className="tabs_Category cursor-pointer hover:bg-white hover:text-gray-800 hover:border-b-red-400 border-2 border-white px-2 border-l-0 border-t-0 border-b-0 flex items-center gap-2">

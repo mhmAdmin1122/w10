@@ -6,6 +6,7 @@ import graphicPic from '@/../public/img/graphic.jpg'
 import databasePic from '@/../public/img/database.jpg'
 import HTL5PIC from '../../../public/img/html5.jpg'
 import nextpic from '../../../public/img/next.jpg'
+import Space from '../S/Space'
 
 const Tutorial = () => {
   return (
@@ -113,7 +114,7 @@ const Tutorial = () => {
         <button className='px-4 py-2 rounded-lg bg-gray-800 text-gray-50 font-medium flex items-center justify-center my-3'>For More Excercise &rarr;</button>
       </div>
 
-      <div className="space h-24"></div>
+      <Space />
     </>
   )
 }

@@ -9,7 +9,7 @@ const index = () => {
     return (
         <>
             <Head>
-                <title>W10 || Help</title>
+                <title>W10 || Tutorial and Execercises</title>
             </Head>
             <Header />
             <CategoryTabs />
