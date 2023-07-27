@@ -15,15 +15,15 @@ const index = () => {
       <Header />
       <CategoryTabs />
       <div className='main-content flex flex-wrap w-full px-9 py-3 gap-4'>
-      <EntertainmentCard />
-      <EntertainmentCard />
+        <EntertainmentCard />
+        <EntertainmentCard />
       </div>
       <b className='text-3xl'>Few More Changes Added soon Practice Sheet Ready to View . <br />
-      WEB PAGES ARE IN DEVELOPING mood</b>
+        WEB PAGES ARE IN DEVELOPING mood</b>
       <Space />
       <MobileCategHeader />
     </>
   )
 }
 
-export default index
+export default index;
