@@ -10,7 +10,7 @@ const Layout = ({ children }: any) => {
         setActive(!isActive);
     };
     return (
-        <>
+        <div>
             <div className="bg-blue-700 px-16 py-8 grid justify-center items-center justify-items-center h-auto">
                 <div className="openBox grid justify-center items-center justify-items-center bg-white my-4 rounded-md px-10 py-4">
                     <div className="logoBox flex items-center justify-center">
@@ -24,13 +24,14 @@ const Layout = ({ children }: any) => {
                     </div>
                 </div>
                 {isActive &&
-                    <div className="bg-gray-100 px-12 py-4 rounded-md">
+                    <div className="bg-gray-100 px-12 py-4 rounded-md border-t-8 border-blue-700 border-dashed">
                         <AdminHeader />
                         {children}
                     </div>
                 }
             </div>
-        </>
+             <div className={isActive ? "hidden" : "bg-blue-700 px-16 py-8 grid justify-center items-center justify-items-center"} style={{height: 341.2}}></div>
+        </div>
     )
 }
 

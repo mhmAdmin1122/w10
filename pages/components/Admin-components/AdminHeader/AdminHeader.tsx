@@ -17,13 +17,13 @@ const AdminHeader = () => {
             <Link href={'/Admin/AdminTutorial'}>
               <li className="tabs_Aadmin cursor-pointer">Tutorials</li>
             </Link>
-            <Link href={'/'}>
+            <Link href={'/Admin/AdminCourse'}>
               <li className="tabs_Aadmin cursor-pointer">Courses</li>
             </Link>
-            <Link href={'/'}>
+            <Link href={'/Admin/AdminProduct'}>
               <li className="tabs_Aadmin cursor-pointer">Products</li>
             </Link>
-            <Link href={'/'}>
+            <Link href={'/Admin/AdminCertificate'}>
               <li className="tabs_Aadmin cursor-pointer">Certification</li>
             </Link>
           </ul>

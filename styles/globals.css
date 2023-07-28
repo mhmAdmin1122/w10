@@ -13,15 +13,34 @@
 .contact-form label,
 .ent-frm-label label,
 .tut-frm-label label,
+.mainContent label,
+.crdContent label,
+.sub label,
+.upload-Pdf-course-pic label,
 .feedForm label,
+.cardProductInfo label,
+.certi-builder label,
 .ProblemsForm label {
   @apply my-2 text-lg font-bold;
 }
 .contact-form input,
+.cardProductInfo input,
+.certi-builder input,
+.cardProductInfo textarea,
+.certi-builder textarea,
+.cardProductInfo select,
+.cardProductInfo option,
 .ent-frm-label input,
 .ent-frm-label textarea,
 .tut-frm-label input,
+.sub input,
+.mainContent input[type="text"],
 .tut-frm-label textarea,
+.sub textarea,
+.mainContent textarea,
+.crdContent input[type="text"],
+.crdContent textarea,
+.crdContent select,
 .contact-form textarea,
 .feedForm textarea,
 .ProblemsForm textarea {
@@ -38,6 +57,19 @@
 }
 body {
   position: relative;
+}
+body::-webkit-scrollbar{
+  width: 2px;
+  background: #2828ee;
+}
+body::-webkit-scrollbar-thumb{
+  width: 12px;
+  background: #81ee28;
+}
+.upload-post-course-pic svg,
+.upload-Pdf-course-pic svg {
+  font-size: 220px;
+  pointer-events: none;
 }
 /* web-view 1039 to 850 */
 @media (max-width: 1039px) and (min-width: 850px) {
@@ -171,7 +203,6 @@ body {
 /* web-view 360 to 100 */
 
 @media (max-width: 360px) and (min-width: 100px) {
-
   .map-view-frame {
     width: 230px !important;
     height: 160px !important;
@@ -182,10 +213,10 @@ body {
     text-align: center;
     margin: 6px 0px;
   }
-  .how-to-box{
+  .how-to-box {
     margin-bottom: 95px;
   }
-  
+
   .how-to,
   .about-us {
     display: grid !important;
