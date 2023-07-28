@@ -11,11 +11,17 @@
 }
 
 .contact-form label,
+.ent-frm-label label,
+.tut-frm-label label,
 .feedForm label,
 .ProblemsForm label {
   @apply my-2 text-lg font-bold;
 }
 .contact-form input,
+.ent-frm-label input,
+.ent-frm-label textarea,
+.tut-frm-label input,
+.tut-frm-label textarea,
 .contact-form textarea,
 .feedForm textarea,
 .ProblemsForm textarea {
