@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Header from '../components/H/Header'
 import CategoryTabs from '../components/C/CategoryTabs'
 import Head from 'next/head'
-
 import CallUs from '../components/C/CallUs'
 import GiveFeedBack from '../components/G/GiveFeedBack'
 import { MdAddIcCall, MdContactMail, MdOutlineFeedback, MdReportProblem } from 'react-icons/md'
