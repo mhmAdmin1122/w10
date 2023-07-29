@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import Header from '../components/H/Header'
 import CategoryTabs from '../components/C/CategoryTabs'
 import Head from 'next/head'
-import ContactUs from '../components/C/ContactUs'
+
 import CallUs from '../components/C/CallUs'
 import GiveFeedBack from '../components/G/GiveFeedBack'
 import { MdAddIcCall, MdContactMail, MdOutlineFeedback, MdReportProblem } from 'react-icons/md'
 import ProblemsForm from '../components/P/ProblemsForm'
+import ContactUs from '../components/C/ContactUs'
 
 const Help = () => {
 
