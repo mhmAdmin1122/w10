@@ -22,7 +22,6 @@ const ContactUs = () => {
         if (response.ok) {
             alert('Form submission failed.');
         } else {
-            alert('Form submitted successfully!');
             setFirstName('')
             setLastName('')
             setEmail('');
