@@ -4,10 +4,15 @@ import React, { useState } from 'react'
 const GiveFeedBack = () => {
   const [feedBack, setFeedBack] = useState('');
 
-  async function feedback(ev: any) {
+  async function feedback(ev) {
     ev.preventDefault()
     const data = { feedBack }
-    await axios.post('/api/feedBack', data)
+    const response = await axios.post('/api/feedBack', data);
+    if (response.ok) {
+      alert('Form submission failed.');
+    } else {
+      setFeedBack('')
+    }
   }
   return (
     <>

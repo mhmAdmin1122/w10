@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/components/C/CustomeVideoPlayer.jsx", "pages/components/C/ContactUs.jsx", "pages/components/P/ProblemsForm.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/components/C/CustomeVideoPlayer.jsx", "pages/components/C/ContactUs.jsx", "pages/components/P/ProblemsForm.jsx", "pages/components/G/GiveFeedBack.jsx"],
   "exclude": ["node_modules"]
 }
