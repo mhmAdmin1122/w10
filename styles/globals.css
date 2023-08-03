@@ -11,6 +11,8 @@
 }
 
 .contact-form label,
+.sign-up-form label,
+.loginForm label,
 .ent-frm-label label,
 .tut-frm-label label,
 .mainContent label,
@@ -33,6 +35,11 @@
 .ent-frm-label input,
 .ent-frm-label textarea,
 .tut-frm-label input,
+.sign-up-form input[type="text"],
+.loginForm input[type="text"],
+.loginForm input[type="password"],
+.sign-up-form input[type="password"],
+.sign-up-form input[type="email"],
 .sub input,
 .mainContent input[type="text"],
 .tut-frm-label textarea,
@@ -55,6 +62,7 @@
 .mobile-search-box {
   display: none;
 }
+
 body {
   position: relative;
 }
@@ -147,7 +155,7 @@ body::-webkit-scrollbar-thumb{
   .category-mobile-Tabs {
     display: flex;
     height: 70px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     box-shadow: -1px -13px 31px #cbc8c8;
@@ -185,7 +193,7 @@ body::-webkit-scrollbar-thumb{
   .category-mobile-Tabs {
     display: flex;
     height: 70px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     box-shadow: -1px -13px 31px #cbc8c8;
@@ -228,7 +236,7 @@ body::-webkit-scrollbar-thumb{
   .category-mobile-Tabs {
     display: flex;
     height: 70px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     box-shadow: -1px -13px 31px #cbc8c8;
