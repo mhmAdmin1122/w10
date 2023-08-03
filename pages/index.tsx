@@ -4,6 +4,7 @@ import Header from './components/H/Header'
 import Head from 'next/head'
 import HowTo from './components/H/HowTo'
 import MobileCategHeader from './components/M/MobileCategHeader'
+import CourseHomeSec from './components/C/CourseHomeSec'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Header />
       <CategoryTabs />
+      <CourseHomeSec />
       <MobileCategHeader />
       <About />
       <HowTo />

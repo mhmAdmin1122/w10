@@ -66,11 +66,11 @@
 body {
   position: relative;
 }
-body::-webkit-scrollbar{
-  width: 2px;
+body::-webkit-scrollbar {
+  width: 12px;
   background: #2828ee;
 }
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   width: 12px;
   background: #81ee28;
 }
@@ -251,3 +251,9 @@ body::-webkit-scrollbar-thumb{
     display: block;
   }
 }
+
+/* .hero-img img {
+  height: 500px;
+  width: 600px;
+} */
+
