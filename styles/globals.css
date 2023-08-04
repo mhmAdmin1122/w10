@@ -9,6 +9,12 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+.oals,
+.pics div p,
+.aboutus p,
+.Team p {
+  font-family: "Montserrat";
+}
 
 .contact-form label,
 .sign-up-form label,
@@ -252,8 +258,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-/* .hero-img img {
-  height: 500px;
-  width: 600px;
-} */
+
+
+
 

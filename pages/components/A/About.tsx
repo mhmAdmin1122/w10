@@ -1,18 +1,46 @@
 import React from 'react'
+import Image from 'next/image'
+import clasPic from '@/public/img/classes.png'
+import topCourses from '@/public/img/top.png'
+import ebooks from '@/public/img/ebook.png'
 
 const About = () => {
   return (
-    <div className='about-us w-full h-auto flex items-start'>
-      <div className='text_orr h-auto bg-gray-500 text-white px-4 py-2 my-1 ml-2'>
-        <b>A B O U T   U S</b>
+    <section>
+
+      <div className="aboutus grid justify-center mt-14 bg-blue-50 w-full px-10 py-12 h-auto">
+
+        <p className="text-orange-500 cursor-context-menu text-4xl text-center font-bold">About Us</p>
+
+        <p className="text-3xl cursor-context-menu text-center font-bold">
+          The Result of All True Learning
+        </p>
+
+        <p className="text-center cursor-context-menu text-lg font-bold mt-3">
+          <strong>A modern and unique style</strong>
+        </p>
+
+        <div className="portions flex gap-8 mt-4 flex-wrap justify-center">
+          <div className="new-class h-auto w-80 rounded-3xl items-center px-5 pb-5 pt-12 shadow-lg shadow-gray-400 relative content-center bg-gray-200 grid justify-center justify-items-center">
+            <Image src={clasPic} alt="new-Class" className='w-20 h-20 border-2 border-gray-100 p-4 rounded-full' />
+            <p className="text-center cursor-context-menu text-lg font-bold mt-3">NEW CLASSES</p>
+            <p className="text-xl p-2 font-base text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolorem.</p>
+          </div>
+          <div className="new-class h-auto w-80 rounded-3xl items-center px-5 pb-5 pt-12 shadow-lg shadow-gray-400 relative content-center bg-gray-200 grid justify-center justify-items-center">
+            <Image src={topCourses} alt="top-courses" className='w-20 h-20 border-2 border-gray-100 p-4 rounded-full' />
+            <p className="text-center cursor-context-menu text-lg font-bold mt-3">TOP COURSES</p>
+            <p className="text-xl p-2 font-base text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolorem.</p>
+          </div>
+          <div className="new-class h-auto w-80 rounded-3xl items-center px-5 pb-5 pt-12 shadow-lg shadow-gray-400 relative content-center bg-gray-200 grid justify-center justify-items-center">
+            <Image src={ebooks} alt="E-BOOKS" className='w-20 h-20 border-2 border-gray-100 p-4 rounded-full' />
+            <p className="text-center cursor-context-menu text-lg font-bold mt-3">FULL E-BOOKS</p>
+            <p className="text-xl p-2 font-base text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolorem.</p>
+          </div>
+        </div>
+
       </div>
-      <div className="abotText pr-8 pl-3 py-2">
-        <h1 className='font-extrabold text-2xl mb-2'>About Us!</h1>
-        <p className='my-2'>Welcome to our education site! At {"world10"}, we believe in empowering minds and shaping futures.</p>
-        <b className='text-justify mt-1 mb-1'>Who are we?</b>
-        <p className='text-justify mt-2 mb-2'>We are a passionate team of educators, innovators, and dreamers committed to revolutionizing the way knowledge is imparted and acquired. Our mission is to inspire, educate, and ignite the curiosity within every learner, regardless of age or background. With a diverse range of courses, expert instructors, and cutting-edge technology, we strive to create a dynamic and inclusive learning environment where students can unlock their full potential and thrive in {"today's"} ever-changing world. Join us on this transformative journey of growth and discovery, as we pave the way for a brighter, more enlightened tomorrow.</p>
-      </div>
-    </div>
+
+    </section>
   )
 }
 
