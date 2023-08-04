@@ -58,24 +58,24 @@ const Footer = () => {
 
             </div>
 
-            <div className="address">
+            <div className="address grid">
 
                 <p className='font-extrabold text-2xl cursor-context-menu text-red-600'>CONTACT US</p>
 
-                <p className="text-gray-50 pt-3">
+                <b className="text-gray-50 pt-3">
                     <b>Address:</b>
                     <address>Bahawalpur, PB, Pakistan, 63100</address>
-                </p>
+                </b>
 
-                <p className="text-gray-50 pt-3">
+                <b className="text-gray-50 pt-3 grid">
                     <b>Phone:</b> 
-                    <address>+9203257390045</address>
-                </p>
+                    <code>+9203257390045</code>
+                </b>
 
-                <p className="text-gray-50 pt-3">
+                <b className="text-gray-50 pt-3 grid">
                     <b>Email:</b> 
-                    <address>w10closetoworld@gmail.com</address>
-                </p>
+                    <code>w10closetoworld@gmail.com</code>
+                </b>
 
             </div>
 

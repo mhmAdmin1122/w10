@@ -8,6 +8,7 @@ import YourGoals from './components/Y/YourGoals'
 import OurTeamSection from './components/O/OurTeamSection'
 import Footer from './components/F/Footer'
 import CopyRightLine from './components/C/CopyRightLine'
+import WebLayout from './components/L/WebLayout'
 
 export default function Home() {
   return (
@@ -15,15 +16,12 @@ export default function Home() {
       <Head>
         <title>W10 || Home</title>
       </Head>
-      <Header />
-      <CategoryTabs />
-      <CourseHomeSec />
-      <YourGoals />
-      <About />
-      <OurTeamSection />
-      <Footer />
-      <CopyRightLine />
-      <MobileCategHeader />
+      <WebLayout>
+        <CourseHomeSec />
+        <YourGoals />
+        <About />
+        <OurTeamSection />
+      </WebLayout>
     </>
   )
 }
