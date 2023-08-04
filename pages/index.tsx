@@ -7,6 +7,7 @@ import CourseHomeSec from './components/C/CourseHomeSec'
 import YourGoals from './components/Y/YourGoals'
 import OurTeamSection from './components/O/OurTeamSection'
 import Footer from './components/F/Footer'
+import CopyRightLine from './components/C/CopyRightLine'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <About />
       <OurTeamSection />
       <Footer />
+      <CopyRightLine />
       <MobileCategHeader />
     </>
   )
