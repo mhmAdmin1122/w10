@@ -4,6 +4,7 @@ import CategoryTabs from '../C/CategoryTabs'
 import Footer from '../F/Footer'
 import CopyRightLine from '../C/CopyRightLine'
 import MobileCategHeader from '../M/MobileCategHeader'
+import BackToTop from '../B/BackToTop'
 
 const WebLayout = ({ children }: any) => {
     return (
@@ -14,6 +15,7 @@ const WebLayout = ({ children }: any) => {
             <Footer />
             <CopyRightLine />
             <MobileCategHeader />
+            <BackToTop />
         </>
     )
 }
