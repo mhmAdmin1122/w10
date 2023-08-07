@@ -27,7 +27,7 @@
 
 /* slider */
 .card {
-  @apply !w-72;
+  @apply w-72;
 }
 
 .slick-slider {
@@ -135,15 +135,15 @@ body::-webkit-scrollbar-thumb {
 .card-Container .card-body {
   @apply px-2 py-4 text-ellipsis;
 }
-.card-Container .card-body b{
+.card-Container .card-body b {
   @apply flex items-center gap-3 text-center justify-center text-xl py-2 cursor-context-menu;
 }
-.card-Container .card-body p{
+.card-Container .card-body p {
   @apply flex items-center gap-3 text-center justify-center text-lg py-2;
 }
 
 /* web-view 1039 to 850 */
-@media (max-width: 1039px) and (min-width: 850px) {
+/* @media (max-width: 1039px) and (min-width: 850px) {
   .text_orr {
     writing-mode: horizontal-tb;
     text-orientation: unset;
@@ -161,9 +161,9 @@ body::-webkit-scrollbar-thumb {
   .mobile-search-box {
     display: none;
   }
-}
+} */
 /* web-view 849 to 650 */
-@media (max-width: 849px) and (min-width: 650px) {
+/* @media (max-width: 849px) and (min-width: 650px) {
   .text_orr {
     writing-mode: horizontal-tb;
     text-orientation: unset;
@@ -195,9 +195,9 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between !important;
     width: 100%;
   }
-}
+} */
 /* web-view 649 to 451 */
-@media (max-width: 649px) and (min-width: 451px) {
+/* @media (max-width: 649px) and (min-width: 451px) {
   .text_orr {
     writing-mode: horizontal-tb;
     text-orientation: unset;
@@ -229,9 +229,9 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between !important;
     width: 100%;
   }
-}
+} */
 /* web-view 450 to 360 */
-@media (max-width: 450px) and (min-width: 360px) {
+/* @media (max-width: 450px) and (min-width: 360px) {
   .map-view-frame {
     width: 230px !important;
     height: 160px !important;
@@ -270,10 +270,10 @@ body::-webkit-scrollbar-thumb {
   .mobile-search-box {
     display: block;
   }
-}
+} */
 /* web-view 360 to 100 */
 
-@media (max-width: 360px) and (min-width: 100px) {
+/* @media (max-width: 360px) and (min-width: 100px) {
   .map-view-frame {
     width: 230px !important;
     height: 160px !important;
@@ -312,5 +312,77 @@ body::-webkit-scrollbar-thumb {
   }
   .mobile-search-box {
     display: block;
+  }
+} */
+
+/* web-view 1279 to 1038 */
+@media (max-width: 1280px) and (min-width: 1038px) {
+  .card {
+    @apply w-52;
+  }
+  .slick-list {
+    width: 960px !important;
+  }
+  .slick-dots {
+    left: 0px;
+  }
+}
+
+/* web-view 1037 to 851 */
+@media (max-width: 1039px) and (min-width: 850px) {
+  .card {
+    @apply w-52;
+  }
+  .slick-list {
+    width: 700px !important;
+  }
+  header {
+    @apply !px-4;
+  }
+}
+
+/* Tab-view 850 to 651 */
+@media (max-width: 849px) and (min-width: 651px) {
+  /* slide */
+  .card {
+    @apply w-52;
+  }
+  .slick-list {
+    width: 650px !important;
+  }
+  header {
+    @apply !px-4;
+  }
+}
+
+/* Tab-view 650 to 541 */
+@media (max-width: 650px) and (min-width: 541px) {
+  .card {
+    @apply w-48;
+  }
+  .slick-list {
+    width: 400px !important;
+  }
+}
+
+/* Tab-view 540 to 441 */
+@media (max-width: 540px) and (min-width: 441px) {
+  .card {
+    @apply w-72;
+  }
+  .slick-list {
+    width: 300px !important;
+    justify-content: center;
+  }
+}
+
+/* Mobile-View 440 to 350*/
+@media (max-width: 440px) and (min-width: 350px) {
+  .card {
+    @apply w-52;
+  }
+  .slick-list {
+    width: 220px !important;
+    justify-content: center;
   }
 }
