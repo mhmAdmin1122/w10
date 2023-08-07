@@ -27,41 +27,24 @@
 
 /* slider */
 .card {
-  width: 280px !important;
+  @apply !w-72;
 }
 
 .slick-slider {
-  padding: 36px;
+  @apply p-9;
 }
 .slick-prev::before {
-  content: "<" !important;
-  z-index: 9999999 !important;
+  @apply !content-['<'];
 }
 .slick-next::before {
-  content: ">" !important;
-  right: 12px;
-  top: 0px;
+  @apply !content-['>'] right-3 top-0;
 }
 .slick-prev::before,
 .slick-next::before {
-  width: 40px;
-  height: 40px;
-  background-color: #be83da;
-  color: #f7f5f5 !important;
-  font-weight: bolder !important;
-  font-family: "Anton", sans-serif;
-  padding: 24px;
-  position: absolute;
-  font-family: "slick";
-  font-size: 28px;
-  opacity: 1;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  font-weight: bold !important;
-  border-radius: 50%;
+  @apply w-10 h-10 bg-purple-800 border-2 border-purple-500 shadow-md shadow-purple-400 !text-gray-100 !font-extrabold p-6 absolute text-3xl opacity-100 grid content-center items-center justify-center justify-items-center rounded-full;
+}
+.slick-dots li button:before {
+  @apply !text-4xl !content-['*'];
 }
 
 /* Header end */
