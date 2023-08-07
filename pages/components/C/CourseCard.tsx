@@ -9,9 +9,9 @@ const CourseCard = ({ data }: any) => {
                 <Image src={data?.image} alt='crd-pic' width={288} height={160} />
             </div>
             <div className="cardBody px-4 py-2 bg-white">
-                <b>{data.id}</b>
-                <b>{data.cardTitle}</b>
-                <p>{data.ShortDesc}</p>
+                <b>{data?.id}</b>
+                <b>{data?.cardTitle}</b>
+                <p>{data?.ShortDesc}</p>
                 <Link href={"/"}>
                     <button>Check Now &rarr;</button>
                 </Link>
