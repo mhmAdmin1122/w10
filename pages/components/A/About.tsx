@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section>
 
-      <div className="aboutus grid justify-center mt-14 bg-blue-50 w-full px-10 py-12 h-auto">
+      <div className="aboutus grid justify-center bg-blue-50 w-full px-10 py-12 h-auto">
 
         <p className="text-orange-500 cursor-context-menu text-4xl text-center font-bold">About Us</p>
 

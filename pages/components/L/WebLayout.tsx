@@ -10,7 +10,7 @@ const WebLayout = ({ children }: any) => {
     return (
         <>
             <Header />
-            <CategoryTabs />
+            {/* <CategoryTabs /> */}
             {children}
             <Footer />
             <CopyRightLine />

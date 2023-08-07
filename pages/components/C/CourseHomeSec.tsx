@@ -7,10 +7,10 @@ import LanguageCourseSec from '../L/LanguageCourseSec'
 
 const CourseHomeSec = () => {
     return (
-        <section className='bg-gray-900 pb-4'>
-            <div className="content flex items-center justify-between content-between w-full bg-no-repeat bg-cover text-white pb-14 h-auto px-12 ">
+        <section className='bg-purple-200 pb-4'>
+            <div className="content flex items-center justify-around content-between w-full bg-no-repeat bg-cover text-gray-800 pb-14 h-auto px-12 ">
 
-                <div className="hero">
+                <div className="hero cursor-context-menu">
 
                     <div className="flex items-center content-center pt-2 mb-2 h-auto tracking-wide">
                         <MdHome />
@@ -22,7 +22,7 @@ const CourseHomeSec = () => {
                             Unleash the <br /><span className="t-M"> Tech Marvels</span><br />
                             World 10 Tech
                         </p>
-                        <Link href={'/'} className="explore-btn py-5 px-6 bg-red-500 text-gray-100 relative top-8 font-semibold hover:bg-red-600">Explore Courses</Link>
+                        <Link href={'/'} className="explore-btn py-5 px-6 bg-purple-800 text-gray-100 relative top-8 font-semibold hover:bg-purple-700 rounded-sm">Explore Courses</Link>
                     </div>
 
                 </div>

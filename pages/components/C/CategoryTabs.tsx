@@ -3,10 +3,11 @@ import { MdShoppingBag, MdShop2, MdHome } from 'react-icons/md'
 import { PiCertificate } from 'react-icons/pi'
 import { FaPhotoVideo, FaHandsHelping } from 'react-icons/fa'
 import Link from 'next/link'
-
+import {MdCastForEducation} from 'react-icons/md'
 const CategoryTabs = () => {
   return (
     <div className='categoryTabs bg-purple-500 w-full h-8 shadow-md shadow-gray-300 text-gray-800 flex justify-center items-center font-medium px-5 header'>
+      
       <ul className="CategoryList flex text-white">
         <Link href={"/"}>
           <li className="tabs_Category cursor-pointer hover:bg-white hover:text-gray-800 hover:border-b-red-400 border-2 border-white px-2 border-l-0 border-t-0 border-b-0 flex items-center gap-2 rounded-l-lg">
@@ -24,6 +25,13 @@ const CategoryTabs = () => {
           <li className="tabs_Category cursor-pointer hover:bg-white hover:text-gray-800 hover:border-b-red-400 border-2 border-white px-2 border-l-0 border-t-0 border-b-0 flex items-center gap-2">
             <b><PiCertificate /></b>
             <b>Certifiction</b>
+          </li>
+        </Link>
+
+        <Link href={"/courses"}>
+          <li className="tabs_Category cursor-pointer hover:bg-white hover:text-gray-800 hover:border-b-red-400 border-2 border-white px-2 border-l-0 border-t-0 border-b-0 flex items-center gap-2">
+            <b><MdCastForEducation /></b>
+            <b>Courses</b>
           </li>
         </Link>
 

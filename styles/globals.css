@@ -5,6 +5,66 @@
   @apply text-2xl;
 }
 
+/* Header start*/
+
+.tabs a li {
+  @apply cursor-pointer flex items-center hover:text-gray-800;
+}
+.tabs a li:after {
+  content: "";
+  position: absolute;
+  background-color: #252424;
+  height: 3px;
+  width: 0px;
+  left: 0px;
+  bottom: -4px;
+  border-radius: 30px;
+  transition: all 1s ease-in-out;
+}
+.tabs a li:hover:after {
+  @apply w-full;
+}
+
+/* slider */
+.card {
+  width: 280px !important;
+}
+
+.slick-slider {
+  padding: 36px;
+}
+.slick-prev::before {
+  content: "<" !important;
+  z-index: 9999999 !important;
+}
+.slick-next::before {
+  content: ">" !important;
+  right: 12px;
+  top: 0px;
+}
+.slick-prev::before,
+.slick-next::before {
+  width: 40px;
+  height: 40px;
+  background-color: #be83da;
+  color: #f7f5f5 !important;
+  font-weight: bolder !important;
+  font-family: "Anton", sans-serif;
+  padding: 24px;
+  position: absolute;
+  font-family: "slick";
+  font-size: 28px;
+  opacity: 1;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  font-weight: bold !important;
+  border-radius: 50%;
+}
+
+/* Header end */
 .text_orr {
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -257,8 +317,3 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
 }
-
-
-
-
-
