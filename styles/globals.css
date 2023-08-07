@@ -128,6 +128,20 @@ body::-webkit-scrollbar-thumb {
   font-size: 220px;
   pointer-events: none;
 }
+
+.card-Container {
+  @apply bg-gray-50 overflow-hidden rounded-lg my-3 shadow-md shadow-purple-200;
+}
+.card-Container .card-body {
+  @apply px-2 py-4 text-ellipsis;
+}
+.card-Container .card-body b{
+  @apply flex items-center gap-3 text-center justify-center text-xl py-2 cursor-context-menu;
+}
+.card-Container .card-body p{
+  @apply flex items-center gap-3 text-center justify-center text-lg py-2;
+}
+
 /* web-view 1039 to 850 */
 @media (max-width: 1039px) and (min-width: 850px) {
   .text_orr {
