@@ -6,7 +6,7 @@ const CourseCard = ({ data }: any) => {
     return (
         <div className='container card grid border-2 border-gray-200 rounded-md overflow-hidden shadow-md shadow-gray-300'>
             <div className="imageBox">
-                <Image src={data.image} alt='crd-pic' width={288} height={160} />
+                <Image src={data?.image} alt='crd-pic' width={288} height={160} />
             </div>
             <div className="cardBody px-4 py-2 bg-white">
                 <b>{data.id}</b>
