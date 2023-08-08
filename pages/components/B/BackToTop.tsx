@@ -26,7 +26,7 @@ const BackToTop = () => {
 
     return (
         <button
-            className="fixed z-40 bottom-5 text-2xl font-extrabold right-5 py-2 px-4 shadow-md shadow-red-500 items-center rounded-full border-none bg-red-700 text-gray-50 cursor-pointer hidden"
+            className="fixed z-40 bottom-5 text-2xl font-extrabold right-5 py-2 px-4 shadow-md shadow-purple-300 items-center rounded-md border-none bg-purple-700 text-gray-50 cursor-pointer hidden"
             onClick={scrollToTop}
             style={{ display: showButton ? 'block' : 'none' }}
         >
