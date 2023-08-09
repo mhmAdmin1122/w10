@@ -12,7 +12,10 @@ import WebLayout from '../components/L/WebLayout'
 const Help = () => {
 
     const [isActive, setActive] = useState<any>(true);
-    
+    const [call, setCall] = useState<any>(false);
+    const [feed, setFeed] = useState<any>(false);
+    const [prob, setProb] = useState<any>(false);
+
     const handleToggle = () => {
         setActive(!isActive);
         setCall(false);
@@ -20,7 +23,6 @@ const Help = () => {
         setProb(false);
     };
 
-    const [call, setCall] = useState<any>(false);
     const handleCall = () => {
         setCall(!call);
         setActive(false);
@@ -28,14 +30,13 @@ const Help = () => {
         setProb(false);
     };
 
-    const [feed, setFeed] = useState<any>(false);
     const handleFeed = () => {
         setFeed(!call);
         setCall(false);
         setActive(false);
         setProb(false);
     };
-    const [prob, setProb] = useState<any>(false);
+
     const handleProb = () => {
         setProb(!call);
         setCall(false);
@@ -49,19 +50,29 @@ const Help = () => {
                 <title>W10 || Help</title>
             </Head>
             <WebLayout>
-                
-                <ul className="helps-content flex flex-wrap gap-4 w-full justify-center">
-                    <li className="gap-2 flex items-center cursor-pointer helpLink border-gray-200 border-2 shadow-md shadow-gray-300 px-4 py-2 my-2 rounded-md mx-2" onClick={handleToggle}><b><MdContactMail /></b><b>Contact Us</b></li>
-                    <li className="gap-2 flex items-center cursor-pointer helpLink border-gray-200 border-2 shadow-md shadow-gray-300 px-4 py-2 my-2 rounded-md mx-2" onClick={handleCall}><b><MdAddIcCall /></b><b>Call To Us</b></li>
-                    <li className="gap-2 flex items-center cursor-pointer helpLink border-gray-200 border-2 shadow-md shadow-gray-300 px-4 py-2 my-2 rounded-md mx-2" onClick={handleFeed}><b><MdOutlineFeedback /></b> <b>Give Your Feedback</b></li>
-                    <li className="gap-2 flex items-center cursor-pointer helpLink border-gray-200 border-2 shadow-md shadow-gray-300 px-4 py-2 my-2 rounded-md mx-2" onClick={handleProb}><b><MdReportProblem /></b><b>Describe your Problem</b></li>
-                </ul>
-                <div className="show-data-box">
-                    {isActive && <ContactUs />}
-                    {call && <CallUs />}
-                    {feed && <GiveFeedBack />}
-                    {prob && <ProblemsForm />}
+                <div className='bg-purple-400 py-4'>
+
+                    <ul className="helps-content flex flex-wrap gap-4 w-full justify-center text-gray-50">
+
+                        <li className="bg-purple-700" onClick={handleToggle}><b><MdContactMail /></b><b>Contact Us</b></li>
+
+                        <li className="bg-purple-800" onClick={handleCall}><b><MdAddIcCall /></b><b>Call To Us</b></li>
+
+                        <li className="bg-purple-700" onClick={handleFeed}><b><MdOutlineFeedback /></b> <b>Give Your Feedback</b></li>
+
+                        <li className="bg-purple-800" onClick={handleProb}><b><MdReportProblem /></b><b>Describe your Problem</b></li>
+
+                    </ul>
+
+                    <div className="show-data-box">
+                        {isActive && <ContactUs />}
+                        {call && <CallUs />}
+                        {feed && <GiveFeedBack />}
+                        {prob && <ProblemsForm />}
+                    </div>
+
                 </div>
+
             </WebLayout>
         </>
     )

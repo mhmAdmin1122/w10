@@ -153,6 +153,9 @@ body::-webkit-scrollbar-thumb {
 .tab-mob-menu-ico-list ul li {
   @apply py-2 cursor-pointer;
 }
+.helps-content li{
+  @apply gap-2 flex items-center cursor-pointer border-purple-600 border-2 shadow-md shadow-purple-500 px-4 py-2 my-2 rounded-md mx-2; 
+}
 
 /* Responsive views */
 
