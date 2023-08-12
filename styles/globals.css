@@ -70,14 +70,17 @@
 .upload-Pdf-course-pic label,
 .feedForm label,
 .cardProductInfo label,
+.FCUPLODER label,
 .certi-builder label,
 .ProblemsForm label {
   @apply my-2 text-lg font-bold;
 }
 .contact-form input,
 .cardProductInfo input,
+.FCUPLODER input,
 .certi-builder input,
 .cardProductInfo textarea,
+.FCUPLODER textarea,
 .certi-builder textarea,
 .cardProductInfo select,
 .cardProductInfo option,

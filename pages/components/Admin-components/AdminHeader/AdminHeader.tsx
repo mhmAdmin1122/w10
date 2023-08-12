@@ -26,6 +26,9 @@ const AdminHeader = () => {
             <Link href={'/Admin/AdminCertificate'}>
               <li className="tabs_Aadmin cursor-pointer">Certification</li>
             </Link>
+            <Link href={'/Admin/FeaturedCourses'}>
+              <li className="tabs_Aadmin cursor-pointer">Featured-Courses</li>
+            </Link>
           </ul>
         </div>
       </div>
