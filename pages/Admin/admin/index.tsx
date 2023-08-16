@@ -1,8 +1,4 @@
-import AdminHeader from '@/pages/components/Admin-components/AdminHeader/AdminHeader'
-import Image from 'next/image'
-import React, { useState } from 'react'
-import logoPic from '@/public/img/logo.png'
-import Link from 'next/link'
+import React from 'react'
 import Head from 'next/head'
 import Layout from '@/pages/components/Admin-components/Layout/Layout'
 

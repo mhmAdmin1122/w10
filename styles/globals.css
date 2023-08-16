@@ -72,11 +72,13 @@
 .cardProductInfo label,
 .FCUPLODER label,
 .certi-builder label,
+.aboutMoreProduct label,
 .ProblemsForm label {
   @apply my-2 text-lg font-bold;
 }
 .contact-form input,
 .cardProductInfo input,
+.aboutMoreProduct input,
 .FCUPLODER input,
 .certi-builder input,
 .cardProductInfo textarea,

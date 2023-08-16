@@ -36,7 +36,7 @@ const Header = () => {
 
         <Link href={"/certificate"}>
           <li className='relative font-bold'>
-            <h4>Certifiction</h4>
+            <h4>Certification</h4>
           </li>
         </Link>
 
