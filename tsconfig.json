@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/components/C/CustomeVideoPlayer.jsx", "pages/components/C/ContactUs.jsx", "pages/components/P/ProblemsForm.jsx", "pages/components/G/GiveFeedBack.jsx", "pages/components/Admin-components/EnterTainmentCard.jsx", "pages/components/Admin-components/TutorialForm.jsx", "pages/components/Admin-components/CoursesForm.jsx", "pages/components/Admin-components/ProductForm.jsx", "pages/components/Admin-components/CertiFiacteForm.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/components/C/CustomeVideoPlayer.jsx", "pages/components/C/ContactUs.jsx", "pages/components/P/ProblemsForm.jsx", "pages/components/G/GiveFeedBack.jsx", "pages/components/Admin-components/EnterTainmentCard.jsx", "pages/components/Admin-components/TutorialForm.jsx", "pages/components/Admin-components/CoursesForm.jsx", "pages/components/Admin-components/ProductForm.jsx", "pages/components/Admin-components/CertiFiacteForm.jsx", "pages/components/Admin-components/FeaturedCourseUploader.jsx", "pages/components/Admin-components/Layout/Layout.tsx"],
   "exclude": ["node_modules"]
 }

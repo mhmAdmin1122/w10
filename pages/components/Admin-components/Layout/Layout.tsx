@@ -4,10 +4,24 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logoPic from '@/public/img/logo.png'
 
-const Layout = ({ children }: any) => {
-    const [isActive, setActive] = useState<any>(true);
+const Layout = ({ children }:any) => {
+    const [isActive, setActive] = useState(false);
+    const [password, setPassword] = useState<any>('')
+    
     const handleToggle = () => {
-        setActive(!isActive);
+        const person = prompt("Please enter Pass", "123");
+        setPassword(person)
+        if (person == null || person == "") {
+            setPassword(`please used correct password`)
+            setActive(false)
+        } else if(person == '7691'){
+            setActive(true);
+            setPassword('success');
+        }
+        else {
+            setPassword(`try again`)
+            setActive(false)
+        }
     };
     return (
         <div>
@@ -30,7 +44,8 @@ const Layout = ({ children }: any) => {
                     </div>
                 }
             </div>
-             <div className={isActive ? "hidden" : "bg-blue-700 px-16 py-8 grid justify-center items-center justify-items-center"} style={{height: 341.2}}></div>
+            <b className={isActive? "hidden" : "text-red-600"}>{password}</b>
+            <div className={isActive ? "hidden" : "bg-blue-700 px-16 py-8 grid justify-center items-center justify-items-center"} style={{ height: 341.2 }}></div>
         </div>
     )
 }
