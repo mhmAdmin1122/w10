@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
-import cardPic from '@/../public/img/logo.png'
 import CustomVideoPlayer from '../C/CustomeVideoPlayer';
 
-const EntertainmentCard = ({data}:any) => {
+const EntertainmentCard = ({ data }: any) => {
   const [isHovering, setIsHovering] = useState(false);
   const videoSrc = '/video/don.mp4';
 
@@ -22,6 +21,7 @@ const EntertainmentCard = ({data}:any) => {
         {isHovering &&
           <CustomVideoPlayer src={videoSrc} />
         }
+
       </div>
       <div className="cardDetails w-full px-2 py-1">
         <b>{data?._id}</b><br />

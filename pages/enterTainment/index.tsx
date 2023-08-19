@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import Header from '../components/H/Header'
-import CategoryTabs from '../components/C/CategoryTabs'
 import EntertainmentCard from '../components/E/EntertainmentCard'
-import MobileCategHeader from '../components/M/MobileCategHeader'
 import Space from '../components/S/Space'
 import axios from 'axios'
+import Footer from '../components/F/Footer'
 
 const EnterTainment = () => {
   const [enterCardData, setEnterCardData] = useState<string | Boolean | Number | null | never | object | any>([]);
@@ -22,12 +21,13 @@ const EnterTainment = () => {
         <title>W10 || Entertainment</title>
       </Head>
       <Header />
-      <CategoryTabs />
-      {enterCardData.map((enterCardData: string) => (
-        <EntertainmentCard data={enterCardData} key={keyRotation + 1} />
-      ))}
+      <div className='flex flex-wrap gap-6 py-6 px-10'>
+        {enterCardData.map((enterCardData: string) => (
+          <EntertainmentCard data={enterCardData} key={keyRotation + 1} />
+        ))}
+      </div>
       <Space />
-      <MobileCategHeader />
+      <Footer />
     </>
   )
 }
