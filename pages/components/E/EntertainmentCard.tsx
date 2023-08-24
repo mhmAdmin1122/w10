@@ -1,35 +1,22 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
-import CustomVideoPlayer from '../C/CustomeVideoPlayer';
+import Link from 'next/link';
+import React from 'react'
 
 const EntertainmentCard = ({ data }: any) => {
-  const [isHovering, setIsHovering] = useState(false);
-  const videoSrc = '/video/don.mp4';
-
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
   return (
-    <div className='Card-Body w-80 h-auto border-2 border-gray-200 rounded-lg overflow-hidden shadow-md shadow-gray-300'>
-      <div className="CardImage w-full relative" onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}>
-        <Image src={data?.pic} alt='card-Image' width={319} height={180} />
-        {isHovering &&
-          <CustomVideoPlayer src={videoSrc} />
-        }
-
+    <div className='Card-Body !w-64 h-auto border-2  bg-white border-gray-200 rounded-lg overflow-hidden shadow-md shadow-gray-300 grid justify-items-center'>
+      <div className="CardImage w-full relative">
+        <Image src={data?.pic} alt='card-Image' className='h-36 !w-64' width={319} height={180} />
       </div>
       <div className="cardDetails w-full px-2 py-1">
-        <b>{data?._id}</b><br />
-        <b className='mb-2 cursor-pointer'>{data?.title}</b>
+        <b className='mb-2 cursor-pointer' title={data?.title}>{data?.title.slice(0, 55)}...</b>
         <p className='text-gray-400 text-justify'>
-          {data?.description}
+          {data?.description.slice(0, 155)}...
         </p>
       </div>
+      <Link href={`/enterTainment/${data?._id}`} className="fileBtn py-2">
+        <button className='bg-purple-700 text-gray-100 font-semibold cursor-pointer px-4 py-2 rounded-lg'>View Detail &rarr;</button>
+      </Link>
     </div>
   )
 }

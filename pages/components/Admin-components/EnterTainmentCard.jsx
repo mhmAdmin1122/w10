@@ -6,11 +6,10 @@ const EnterTainmentCard = () => {
 
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
-  const [pic, setPic] = useState('')
+  const [pic, setPic] = useState(null)
   const [video, setVideo] = useState('')
   const [type, setType] = useState('')
   const [active, setActive] = useState(false);
-
 
   const onclickFunc = () => {
     setActive(true)
@@ -29,18 +28,10 @@ const EnterTainmentCard = () => {
       console.log('Error', error)
     }
   };
-  // video datbase reader url-generator
-  const videoUploder = async (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      const videoUrl = URL.createObjectURL(file);
-      setVideo(videoUrl);
-    }
-  };
 
   async function entertainment(ev) {
     ev.preventDefault()
-    const data = { title, description, pic, video, type }
+    const data = { title, description, pic, video, type}
     const response = await axios.post('/api/entertainment', data);
     console.log(response)
     if (response.ok) {
@@ -48,7 +39,7 @@ const EnterTainmentCard = () => {
     } else {
       setTitle('')
       setDescription('')
-      setPic('');
+      setPic(null)
       setVideo('')
       setType('')
     }
@@ -64,8 +55,8 @@ const EnterTainmentCard = () => {
       <input onChange={handleFileChange} type="file" id='EntertainmentPic' accept='.png, .jpg, .gif' />
       <label htmlFor="desc">Description</label>
       <textarea value={description} onChange={ev => setDescription(ev.target.value)} rows={5} cols={40} id='desc' placeholder='Description' />
-      <label htmlFor="uploadVideo">Video Link</label>
-      <input onChange={videoUploder} type="file" id='uploadVideo' accept='video/*' />
+      <label htmlFor="uploadVideo">Video Path:</label>
+      <input value={video} onChange={ev => setVideo(ev.target.value)} type="text" id='uploadVideo' accept='video/*' placeholder='Video Path' />
       <label htmlFor="type">Video Type</label>
       <input type="text" value={type} id="type" onChange={ev => setType(ev.target.value)} placeholder='type' />
       <button type="submit" className='bg-gray-500 text-gray-50 font-bold px-4 py-2 my-2 rounded-lg cursor-pointer' onClick={onclickFunc}>Upload</button>
