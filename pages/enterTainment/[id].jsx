@@ -56,14 +56,14 @@ export default function EntatinmentDetail({ enterTainment }) {
                     </div>
                     <div className="likebtnBox flex flex-wrap gap-2 bg-purple-400 rounded-md overflow-hidden">
                         <div className="likeBx flex flex-wrap gap-4 px-4 py-2 bg-purple-500">
-                            {activeLike ? <FaRegHeart className='cursor-pointer text-white text-2xl' onClick={onLikeClick} /> :
-                                <FaHeart className='cursor-pointer text-white text-2xl' onClick={onFillLike} />}
-                            <b className="counterLike">{like}</b>
+                            {activeLike ? <FaRegHeart className='cursor-pointer text-white text-2xl hover:text-yellow-400' onClick={onLikeClick} /> :
+                                <FaHeart className='cursor-pointer text-white text-2xl hover:text-red-400' onClick={onFillLike} />}
+                            <b className="counterLike cursor-context-menu">{like}</b>
                         </div>
                         <div className="dislikeBox flex flex-wrap gap-4 px-4 py-2 bg-purple-500">
-                            {activeDisLike ? <RiDislikeLine className='cursor-pointer text-white text-2xl' onClick={onDisLikeClick} /> :
-                                <RiDislikeFill className='cursor-pointer text-white text-2xl' onClick={onDisFillLike} />}
-                            <b className="counterdisLike">{disLike}</b>
+                            {activeDisLike ? <RiDislikeLine className='cursor-pointer text-white text-2xl hover:text-yellow-400' onClick={onDisLikeClick} /> :
+                                <RiDislikeFill className='cursor-pointer text-white text-2xl hover:text-red-400' onClick={onDisFillLike} />}
+                            <b className="counterdisLike cursor-context-menu">{disLike}</b>
                         </div>
                     </div>
                 </div>
