@@ -10,12 +10,13 @@ export default async function handle(req, res) {
   }
 
   if (method === "POST") {
-    const { title, description, pic, video } = req.body;
+    const { title, description, pic, video, category } = req.body;
     const contactsDoc = await Entertainment.create({
       title,
       description,
       pic,
-      video
+      video,
+      category
     });
     res.json(contactsDoc);
   }

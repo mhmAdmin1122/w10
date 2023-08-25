@@ -8,7 +8,7 @@ const EnterTainmentCard = () => {
   const [description, setDescription] = useState('')
   const [pic, setPic] = useState(null)
   const [video, setVideo] = useState('')
-  const [type, setType] = useState('')
+  const [category, setCategory] = useState('')
   const [active, setActive] = useState(false);
 
   const onclickFunc = () => {
@@ -22,7 +22,6 @@ const EnterTainmentCard = () => {
     reader.readAsDataURL(file)
     reader.onload = () => {
       setPic(reader.result);
-      console.log(reader.result);
     }
     reader.onerror = (error) => {
       console.log('Error', error)
@@ -31,7 +30,7 @@ const EnterTainmentCard = () => {
 
   async function entertainment(ev) {
     ev.preventDefault()
-    const data = { title, description, pic, video, type}
+    const data = { title, description, pic, video, category}
     const response = await axios.post('/api/entertainment', data);
     console.log(response)
     if (response.ok) {
@@ -41,7 +40,7 @@ const EnterTainmentCard = () => {
       setDescription('')
       setPic(null)
       setVideo('')
-      setType('')
+      setCategory('')
     }
 
   }
@@ -58,7 +57,7 @@ const EnterTainmentCard = () => {
       <label htmlFor="uploadVideo">Video Path:</label>
       <input value={video} onChange={ev => setVideo(ev.target.value)} type="text" id='uploadVideo' accept='video/*' placeholder='Video Path' />
       <label htmlFor="type">Video Type</label>
-      <input type="text" value={type} id="type" onChange={ev => setType(ev.target.value)} placeholder='type' />
+      <input type="text" value={category} id="type" onChange={ev => setCategory(ev.target.value)} placeholder='type' />
       <button type="submit" className='bg-gray-500 text-gray-50 font-bold px-4 py-2 my-2 rounded-lg cursor-pointer' onClick={onclickFunc}>Upload</button>
       {active ?
         <SuccessMessage />
