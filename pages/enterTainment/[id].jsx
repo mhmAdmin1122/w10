@@ -1,7 +1,7 @@
 import React from 'react'
 import WebLayout from '../components/L/WebLayout'
 import { mongooseConnection } from '@/lib/mongoEnter'
-import { Entertainment } from '@/models/Entertainment'
+import { Entertainment } from '@/models/entertainment'
 import Image from 'next/image'
 import Head from 'next/head'
 
